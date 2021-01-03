@@ -116,9 +116,9 @@ public class NativeSettings extends CordovaPlugin {
 				intent.setData(Uri.parse("package:" + context.getPackageName()));
 			}
 		}
-        //else if (action.equals("notification_listner")) {
-        //    intent = new Intent(android.provider.Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS);
-        //}
+        else if (action.equals("notification_listner")) {
+            intent = new Intent(android.provider.Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS);
+        }
         else if (action.equals("print")) {
             intent = new Intent(android.provider.Settings.ACTION_PRINT_SETTINGS);
         } else if (action.equals("privacy")) {
